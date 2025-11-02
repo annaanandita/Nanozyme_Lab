@@ -31,19 +31,15 @@ The app lets users:
 
 The model implements the reaction mechanism:
 
-\\[
-E + S \\rightleftharpoons ES \\rightarrow E + P
-\\]
+E + S ⇀↽ ES → E + P
 
 with rate equations:
 
-\\[
-\\begin{aligned}
-\\frac{d[S]}{dt} &= -k_1[E][S] + k_{-1}[ES] \\\\
-\\frac{d[ES]}{dt} &= k_1[E][S] - (k_{-1}+k_2)[ES] \\\\
-\\frac{d[P]}{dt} &= k_2[ES]
-\\end{aligned}
-\\]
+d[S]/dt = −k1[E][S] + k−1[ES]
+
+d[ES]/dt = k1[E][S] − (k−1 + k2)[ES]
+
+d[P]/dt = k2[ES]
 
 and includes:
 - **Arrhenius law** temperature dependence  
@@ -55,7 +51,6 @@ and includes:
 ## Installation
 
 ### 1. Clone the repository
-```bash
 git clone https://github.com/<your-username>/NanozymeLab.git
 cd NanozymeLab
 
